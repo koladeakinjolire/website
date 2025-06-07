@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolade Akinjolire | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div>
+            <div class="logo">Kolade Akinjolire</div>
+            <ul class="nav-links">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div>
+            <div class="logo">Kolade Akinjolire</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+           
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div>
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.jpeg" alt="Kolade Akinjolire Profile Picture">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I am</p>
+                <h1 class="title">Kolade Akinjolire</h1>
+                <p class="section__text__p2">Data Scientist</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/Kolade Akinjolire.pdf')">Download Resume</button>
+                    <button class="btn btn-color-2" onclick="location.href='#contact'">Contact Info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/kolade-akinjolire'" />
+                    <img src="./assets/github.png" alt="GitHub Profile" class="icon" onclick="location.href='https://github.com/koladeakinjolire'" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <div>
+            <p class="section__text__p1">Read My Recent</p>
+            <h1 class="title">Blog Posts</h1>
+            <div class="blog-container">
+                <div class="blog-post">
+                    <img src="./assets/bp1.png" alt="Blog Post 1">
+                    <h3 class="blog-title">Data Science:Transforming Industries</h3>
+                    <p class="blog-excerpt">Exploring the latest advancements in data science and their impact on industries.</p>
+                    <a href="blog-post-1.html" class="blog-link">Read More</a>
+                </div>
+                <div class="blog-post">
+                    <img src="./assets/bp2.webp" alt="Blog Post 2">
+                    <h3 class="blog-title">Sports Analytics Revolution</h3>
+                    <p class="blog-excerpt">How data is transforming sports and performance analysis.</p>
+                    <a href="#" class="blog-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Combined with Experience) -->
+    <section id="about">
+        <div>
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.jpeg" alt="About Kolade">
+                </div>
+                <div class="about-details-container">
+                    <p class="about-description">
+                        I am a curious, driven individual whose passions span soccer, basketball, entertainment, finance, and healthy living.
+                         With a keen analytical mind, I thrive at the intersection of numbers and narratives, using data to uncover insights 
+                         that empower people and organizations to make smarter, more informed decisions. Whether analyzing player performance 
+                         on the pitch, team performance on the basketball court or breaking down trends in the market, I enjoy bringing a 
+                         deep sense of purpose and precision to my work.<br><br>As a lifelong learner, I dedicate much of my free time to 
+                         reading across genres, constantly seeking fresh perspectives and tools to sharpen my thinking. 
+                         I also stay active through regular workouts, swimming, and pick-up games of basketball and soccer, which fuel my 
+                         appreciation for high-level athletic performance and strategy. My love for media spans film, podcasts, music, and 
+                         sports coverage, offering both relaxation and inspiration.<br><br>My favorite projects are those that blend my 
+                         diverse interests with the power of analytics. 
+                         My ability to translate complex data into carefully narrated stories as well as actionable insights sets me apart, 
+                         and I aim to continue contributing to fields where smart decisions make a meaningful difference.
+                    </p>
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience Icon" />
+                            <h3>Experience</h3>
+                            <p>2+ years<br>Data Science & Sports Journalism</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education Icon" />
+                            <h3>Education</h3>
+                            <p>Bachelor of Science in Information Technology</p>
+                        </div>
+                    </div>
+                    <div class="experience-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <h2 class="experience-sub-title">Web Development</h2>
+                                <div class="article-container">
+                                    <article>
+                                        <img src="./assets/checkmark.png" alt="Checkmark Icon" />
+                                        <div>
+                                            <h3>HTML</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark.png" alt="Checkmark Icon" />
+                                        <div>
+                                            <h3>JavaScript</h3>
+                                            <p>Intermediate</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark.png" alt="Checkmark Icon" />
+                                        <div>
+                                            <h3>CSS</h3>
+                                            <p>Basic</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="details-container">
+                                <h2 class="experience-sub-title">Data Analysis</h2>
+                                <div class="article-container">
+                                    <article>
+                                        <img src="./assets/checkmark.png" alt="Checkmark Icon" />
+                                        <div>
+                                            <h3>Python</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark.png" alt="Checkmark Icon" />
+                                        <div>
+                                            <h3>PostgreSQL</h3>
+                                            <p>Experienced</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="./assets/checkmark.png" alt="Checkmark Icon" />
+                                        <div>
+                                            <h3>Excel</h3>
+                                            <p>Basic</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div>
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="project-container">
+                <div class="project-post">
+                    <img src="./assets/project-1.png" alt="Project One">
+                    <h3 class="project-title">2013/2014 Premier League Analysis</h3>
+                    <p class="project-description">Detailed analysis of player performance metrics for the 2013/2014 Premier League season.</p>
+                    <a href="https://github.com/koladeakinjolire/Personal-Projects/tree/main/2013%20-2014%20Premier%20League%20Analysis" class="project-link">GitHub</a>
+                </div>
+                <div class="project-post">
+                    <img src="./assets/project-2.png" alt="Project Two">
+                    <h3 class="project-title">2023/2024 NBA Shooting Analysis</h3>
+                    <p class="project-description">In-depth study of shooting efficiency and trends in the 2023/2024 NBA season.</p>
+                    <a href="https://github.com/koladeakinjolire/Personal-Projects/tree/main/2023-2024%20NBA%20Shooting%20Analysis" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="btn btn-color-1"  onclick="window.location.href='projects.html'">
+                    View More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email Icon" />
+                    <p><a href="mailto:akinjolirekolade@gmail.com">akinjolirekolade@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Icon" />
+                    <p><a href="https://linkedin.com/in/kolade-akinjolire">LinkedIn</a></p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <nav class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p>Copyright © 2025 Kolade Akinjolire. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

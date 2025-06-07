@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <div class="logo">Kolade Akinjolire</div>
+                <ul class="nav-links">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <nav id="hamburger-nav">
+        <div>
+            <div class="logo">Kolade Akinjolire</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+      <!-- Project Header -->
+      <header class="blog-header">
+        <h1>Projects</h1>
+        <p>Insight and thoughts on Projects I have worked on.</p>
+    </header>
+    <!-- Project Posts Section -->
+    <section class="blog-posts">
+        <div class="post">
+            <img src="./assets/project-1.png" alt="Blog 1 Thumbnail" class="post-thumbnail">
+            <h2 class="post-title">2013/2014 Premier League Player Analysis</h2>
+            <p class="post-excerpt">Detailed analysis of player performance metrics for the 2013/2014 Premier League season.</p>
+            <a href="https://github.com/koladeakinjolire/Personal-Projects/tree/main/2013%20-2014%20Premier%20League%20Analysis" class="project-link">GitHub</a>
+        </div>
+        <div class="post">
+            <img src="./assets/project-2.png" alt="Blog 1 Thumbnail" class="post-thumbnail">
+            <h2 class="post-title">2023/2024 NBA Shooting Analysis</h2>
+            <p class="post-excerpt">In-depth study of shooting efficiency and trends in the 2023/2024 NBA Season</p>
+            <a href="https://github.com/koladeakinjolire/Personal-Projects/tree/main/2023-2024%20NBA%20Shooting%20Analysis" class="project-link">GitHub</a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <nav class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Kolade Akinjolire. All rights reserved.</p>
+        </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
